@@ -77,10 +77,10 @@ img{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	grid-template-columns: 1fr 3fr 1.5fr 1fr;
 }
 .pessoa{
 	display: grid;
+	grid-template-columns: 1fr 3fr 1.5fr 1fr;
 	min-height: 30px;
 	width: 90%;
 	text-align: center;
