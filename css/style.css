@@ -1,0 +1,50 @@
+/* configurações gerais */
+body,html{
+	margin: 0px auto;
+	padding: 0px auto;
+	font-size: 3vh;
+	font-family: sans-serif;
+	width: 100%;
+    height:100%;
+    background-color:azure; 
+}
+/* root */
+:root{
+	--bluezin: #0082c8;
+	--roxin: #667db6;
+}
+/* first section */
+.grad{
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(var(--bluezin),var(--roxin));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* navbar */
+.navbar{
+	width: 100%;
+	height: 20%;
+	background-color: white;
+}
+/* title do grad */
+.titleGrad{
+	color:white;
+	width: 80%;
+	height: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 10vh;
+	font-family: 'Yeon Sung';
+}
+/* rank */
+.rank{
+	background-color: white;
+	width: 100%;
+}
+.desc{
+	color:silver
+}
