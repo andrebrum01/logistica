@@ -1,0 +1,189 @@
+/* configurações gerais */
+body,html{
+	margin: 0px auto;
+	padding: 0px auto;
+	font-size: 100%;
+	font-family: sans-serif;
+	width: 100%;
+    height:100%;
+    background-color:aliceblue; 
+}
+/* root */
+:root{
+	--bluezin: #0082c8;
+	--roxin: #667db6;
+	--chameleon: ;
+	--sector: ;
+	--subzero: ;
+	--scorpion: ;
+}
+/* first section */
+.grad{
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(var(--bluezin),var(--roxin));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* navbar */
+.navbar{
+	width: 100%;
+	height: 20%;
+	display: grid;
+	grid-template-columns: 1fr auto;
+}
+.admin{
+	height: 100%;
+	width: 10%;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	cursor: pointer;
+}
+img{
+	height: 30%;
+}
+/* title do grad */
+.boxTitle{
+	height: 70%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+}
+.titleGrad{
+	color:white;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 300%;
+	font-family: 'Yeon Sung';
+}
+.legenda{
+	color:white;
+	height: 100%;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	text-transform: uppercase;
+	font-size: 150%;
+	font-family: 'Yeon Sung';
+	text-align: center;
+}
+/*  */
+.desc{
+	width: 90%;
+	height: 10%;
+	color:white;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1.5fr 1fr;
+	font-family: 'Yeon Sung';
+	text-align: center;
+}
+/* rank */
+.rank{
+	background-color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.pessoa{
+	display: grid;
+	grid-template-columns: 1fr 3fr 1.5fr 1fr;
+	min-height: 30px;
+	width: 90%;
+	text-align: center;
+	align-items: center;
+}
+.pos{
+	font-weight: bold;
+	text-align: center;
+}
+.equipe{
+	height: 100%;
+	text-transform:uppercase;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.name{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* equipes */
+
+.equipe.celestial{
+	background-color: gold;
+	color: darkgoldenrod;
+}
+.equipe.chameleon{
+	background-color: forestgreen;
+	color: white;
+}
+.equipe.scorpion{
+	background-color: orange;
+	color: white;
+}
+.equipe.secktor{
+	background-color: firebrick;
+	color: white;
+}
+.equipe.subzero{
+	background-color: cornflowerblue;
+	color: white;
+}
+.equipe.lideres{
+	background-color: darkgray;
+	color: white;
+}
+/* aaa */
+@media screen and (max-width: 718px) {
+	.equipe{
+		display: none;
+	}
+	.pessoa{
+        grid-template-columns: 1fr 3fr 1fr;
+	}
+	.desc{
+		grid-template-columns: 1fr 3fr 1fr;
+	}
+	.celestial{
+		background-color: gold;
+		color: darkgoldenrod;
+	}
+	.chameleon{
+		background-color: forestgreen;
+		color: white;
+	}
+	.scorpion{
+		background-color: orange;
+		color: white;
+	}
+	.secktor{
+		background-color: firebrick;
+		color: white;
+	}
+	.subzero{
+		background-color: cornflowerblue;
+		color: white;
+	}
+	.lideres{
+		background-color: darkgray;
+		color: white;
+	}
+	/*  */
+    .legenda{
+        display: flex;
+    }
+}
